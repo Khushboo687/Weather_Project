@@ -1,3 +1,4 @@
+// initaializing  variables
 const inputBox = document.querySelector('.input-box');
 const searchBtn = document.getElementById('searchBtn');
 const weather_img = document.querySelector('.weather-img');
@@ -10,7 +11,7 @@ const location_not_found = document.querySelector('.location-not-found');
 
 const weather_body = document.querySelector('.weather-body');
 
-
+// weather api function calling
 async function checkWeather(city){
     const api_key = "f594d6721b799599f61f6eaeb1550873";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
